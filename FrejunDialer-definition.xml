@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<callCenter>
+  <!-- General info section -->
+  <section sortOrder="0" name="reqGeneralInfo" label="General Information">
+    <item sortOrder="0" name="reqInternalName" label="InternalName">frejunOpenCTIAdapter</item>
+    <item sortOrder="1" name="reqDisplayName" label="Display Name">Call Center Adapter</item>
+    <!-- Lightning: prefer an HTTPS absolute URL here. If your softphone is a VF page you can use a relative /apex URL,
+         but for Lightning Experience Salesforce recommends https. -->
+    <item sortOrder="2" name="reqAdapterUrl" label="CTI Adapter URL">/apex/frejunCTI__CTIadapter</item>
+    <item sortOrder="3" name="reqUseApi" label="Use CTI API">true</item>
+    <item sortOrder="4" name="reqSoftphoneHeight" label="Softphone Height">600</item>
+    <item sortOrder="5" name="reqSoftphoneWidth" label="Softphone Width">340</item>
+    <item sortOrder="6" name="reqSalesforceCompatibilityMode" label="Salesforce Compatibility Mode">Classic_and_Lightning</item>
+  </section>
+
+  <!-- Dialing / standby options section -->
+  <section sortOrder="1" name="reqDialingOptions" label="Dialing Options">
+    <item sortOrder="0" name="reqStandbyUrl" label="Standby CTI Adapter URL">/apex/frejunCTI__CTIadapter</item>
+    <item sortOrder="1" name="reqTimeout" label="Timeout (ms)">10000</item>
+  </section>
+</callCenter>
