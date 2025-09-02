@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Frejun Salesforce App - Setup Guide</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        line-height: 1.6;
+        margin: 0;
+        padding: 1rem;
+        background: #fafafa;
+        color: #333;
+      }
+      .container {
+        max-width: 800px;
+        margin: auto;
+        background: #fff;
+        padding: 1.5rem;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+      }
+      h2 {
+        font-size: 1.2rem;
+        margin-top: 1.5rem;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 0.3rem;
+      }
+      ol,
+      ul {
+        margin-left: 1.5rem;
+      }
+      a {
+        color: #0070f3;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .support {
+        margin-top: 2rem;
+        padding: 1rem;
+        background: #f0f7ff;
+        border-left: 4px solid #0070f3;
+        border-radius: 6px;
+      }
+      .repo-link {
+        margin-top: 1rem;
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Frejun Salesforce App</h1>
+      <p>
+        The Frejun Salesforce App seamlessly integrates Frejun's telephony
+        services with Salesforce. This allows users to make calls directly from
+        the Frejun dialer within Salesforce and view caller information for
+        incoming calls.
+      </p>
+
+      <h2>Installation</h2>
+      <ol>
+        <li>Get the package installation link from Frejun.</li>
+        <li>Open the link and install the package into your Salesforce org.</li>
+        <li>
+          After installation, configure your Call Center and assign users (see
+          steps below).
+        </li>
+      </ol>
+
+      <h2>Call Center Setup</h2>
+      <ol>
+        <li>Go to <b>Setup</b> → search for <b>Call Centers</b>.</li>
+        <li>
+          Click <b>Import</b> and upload the
+          <code>FrejunDialer-definition.xml</code> file from
+          <a
+            href="https://github.com/frejun-tech/frejun-salesforce"
+            target="_blank"
+            >this repo</a
+          >.
+        </li>
+        <li>
+          After successfully importing the file, make sure you are on the call
+          centers page.
+        </li>
+        <li>
+          Click <b>Manage Call Center Users</b> and add the Salesforce users who
+          can use the Frejun Dialer.
+        </li>
+      </ol>
+
+      <div class="support">
+        <h2>Support</h2>
+        <p>
+          For installation or troubleshooting help, contact the Frejun support
+          team at: <br />
+          📧 <a href="mailto:support@frejun.com">support@frejun.com</a>
+        </p>
+      </div>
+
+      <div class="repo-link">
+        🔗
+        <a
+          href="https://github.com/frejun-tech/frejun-salesforce"
+          target="_blank"
+        >
+          View Full Repo on GitHub
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
